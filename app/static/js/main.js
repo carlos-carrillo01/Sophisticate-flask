@@ -4,8 +4,10 @@ document.querySelector('.mobile-menu-button')?.addEventListener('click', functio
     menu?.classList.toggle('hidden');
 });
 
+
 // Smooth scrolling para todos los enlaces
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
@@ -16,6 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 
 // Efecto parallax para la imagen hero
 window.addEventListener('scroll', function() {
